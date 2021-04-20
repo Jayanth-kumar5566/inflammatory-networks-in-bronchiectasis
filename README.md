@@ -11,7 +11,7 @@ You will need the following softwares and packages to run the codes.
 For Linux systems, Install the following 
 - Python3 
   - pandas library
-- R
+- R 3.5.2
   - mboost package
   - boot package
   - foreach package
