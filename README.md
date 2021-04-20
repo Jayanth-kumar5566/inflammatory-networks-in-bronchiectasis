@@ -8,17 +8,14 @@ This document illustrates the use of the codes to implement the methods describe
 ---
 ## Pre requisites
 You will need the following softwares and packages to run the codes.
-For Linux systems, Run the following 
-
-- Python 
--- pandas library
+For Linux systems, Install the following 
+- Python3 
+  - pandas library
 - R
--- mboost package
--- boot package
--- foreach package
--- doParallel package
+  - mboost package
+  - boot package
+  - foreach package
+  - doParallel package
 - Cytoscape
 ---
 ## Co-occurence analysis
-
-  
