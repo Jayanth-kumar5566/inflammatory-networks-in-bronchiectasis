@@ -49,7 +49,7 @@ cd Without_Cytokines/
 python3 collate.py
 Rscript GBLM_parallel1.R
 ```
-This code will produce the adjacency matrix of the association networks in `N/` for non-frequent exacerbator class and `Y/` for frequent exacerbator class. Import these adjacency matrix in Cytoscape to visualize the association networks.
+This code will produce the adjacency matrix of the association networks named as `adj_to_cyto.csv` in `N/` for non-frequent exacerbator class and `Y/` for frequent exacerbator class. Import these adjacency matrix in Cytoscape to visualize the association networks.
 
 ### Microbial association network with cytokines
 Run the below code from your terminal from the root directory of this repository
@@ -58,4 +58,4 @@ cd With_Cytokines/
 python3 collate.py
 Rscript GBLM_parallel1.R
 ```
-This code will produce the adjacency matrix of the association networks in `N/` for non-frequent exacerbator class and `Y/` for frequent exacerbator class. Import these adjacency matrix in Cytoscape to visualize the association networks.
+This code will produce the adjacency matrix of the association networksnamed as `adj_to_cyto.csv` in `N/` for non-frequent exacerbator class and `Y/` for frequent exacerbator class. Import these adjacency matrix in Cytoscape to visualize the association networks.
