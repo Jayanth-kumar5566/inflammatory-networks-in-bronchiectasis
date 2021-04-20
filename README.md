@@ -16,6 +16,46 @@ For Linux systems, Install the following
   - boot package
   - foreach package
   - doParallel package
-- Cytoscape
+- Cytoscape (for network visualization)
+
+Below is the directory structure of this repository
+``` bash
+.
+├── Data
+│   ├── cyto.csv
+│   ├── Genus_rel.csv
+│   └── necessary_variables.csv
+├── LICENSE
+├── README.md
+├── With_Cytokines
+│   ├── collate.py
+│   ├── GBLM_parallel1.R
+│   ├── N
+│   └── Y
+└── Without_Cytokines
+    ├── collate.py
+    ├── GBLM_parallel1.R
+    ├── N
+    └── Y
+```
+
 ---
-## Co-occurence analysis
+## Co-occurence analysis 
+This code is adopted from https://github.com/translational-respiratory-lab/The_Interactome 
+### Microbial association network without cytokines
+Run the below code from your terminal from the root directory of this repository
+```bash
+cd Without_Cytokines/
+python3 collate.py
+Rscript GBLM_parallel1.R
+```
+This code will produce the adjacency matrix of the association networks in `N/` for non-frequent exacerbator class and `Y/` for frequent exacerbator class. Import these adjacency matrix in Cytoscape to visualize the association networks.
+
+### Microbial association network with cytokines
+Run the below code from your terminal from the root directory of this repository
+```bash
+cd With_Cytokines/
+python3 collate.py
+Rscript GBLM_parallel1.R
+```
+This code will produce the adjacency matrix of the association networks in `N/` for non-frequent exacerbator class and `Y/` for frequent exacerbator class. Import these adjacency matrix in Cytoscape to visualize the association networks.
